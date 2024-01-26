@@ -1,0 +1,66 @@
+body{
+    background-color: #1eebe0;
+}
+.app{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0f94ec;
+    border-left: 1px solid #70A3AB;
+    border-right: 1px solid #70A3AB;
+}
+.app > .screen{
+    display: none;
+}
+.app > .screen.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.screen .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+
+.screen .form-input{
+    width: 100%;
+    margin: 20px 0px;
+}
+.screen h2{
+    margin-bottom: 20px;
+    font-size:30px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 0px;
+    display: inline-block;
+}
+.screen .form-input label{
+    display: block;
+    margin-bottom: 5px;
+}
+.screen .form-input input{
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #70A3AB;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.screen .form-input button{
+    padding: 10px 20px;
+    background: #1a01ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
